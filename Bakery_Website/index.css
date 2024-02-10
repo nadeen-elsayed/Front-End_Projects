@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Antic+Didone&family=Dancing+Script:wght@700&family=Italiana&family=Molle&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Antic+Didone&family=Dancing+Script:wght@700&family=Molle&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@700&family=Molle&family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Italiana', serif;
+    font-family: 'Roboto', sans-serif;
+   
+    
+
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Italiana', serif;
+    font-weight: bolder;
+}
+button{
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+.dark{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background: url('img/don.webp') no-repeat center center fixed;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+    .nav-btn{
+        float: right;
+        padding: 2rem;
+        display: none;
+        font-size: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #FBF1E5;
+        z-index: 999999999;
+        cursor: pointer;
+    }
+    #nav-close{
+        color: #DFA759;
+    }
+    .navbar{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0 5%;
+        color: #FBF1E5;
+        z-index: 20;
+    }
+
+        .home .navbar ul{
+            display: flex;
+            list-style: none;
+        }
+        .home .navbar li{
+            padding-right: 1rem;
+            font-size: 1.2rem;
+            font-family: 'Italiana', serif;
+            font-weight: bolder;
+            cursor: pointer;
+            transition: 0.5s ease-in;
+        }
+
+        .home .navbar li:hover{
+            color: rgb(246,223,137);
+        }
+        #logo, #res-logo{
+            font-family: 'Dancing Script', cursive;
+            font-weight: bolder;
+            font-size: 3rem;
+            padding: 0;
+            margin: 0;
+            font-style: italic;
+            color: #DFA759;
+        }
+        #res-logo{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 30;
+        }
+
+    .home .main-text{
+        width: 100%;
+        margin: auto;
+        padding: 0 20%;
+        position: absolute;
+        bottom:25%;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        color: #FBF1E5;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+        .home .main-text h1{
+            font-size: 8rem;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            margin-top: 0;
+        }
+        .home .main-text .since{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+            .home .main-text .since img{
+                width: 80px;
+                height: 100px;
+            }
+
+            .home .main-text .since h3{
+                color: rgb(246,223,137);
+                font-size: 2rem;
+                padding: 0 1rem;
+                margin-bottom: 0;
+            }
+        .home .main-text button{
+            font-size: 1.2rem;
+            padding: 0.8rem 3rem;
+            font-weight: bold;
+            outline: none;
+            border: none;
+            margin-top: 2rem;
+        }
+
+        .home .main-text #shop{
+            color: rgb(246,223,137);
+            margin-right: 1rem;
+            background-color: transparent;
+            border: 1px solid rgb(246,223,137);
+        }
+        .home .main-text #shop:hover{
+            background-color: transparent;
+            color: #FBF1E5;
+            border: 1px solid #FBF1E5;
+        }
+        .home .main-text #contact{
+            background-color: transparent;
+            color: rgb(246,223,137);
+            border: 1px solid rgb(246,223,137);
+        }
+        .home .main-text #contact:hover{
+            background-color: white;
+            color: rgb(107,73,72);
+        }
+.about-cont{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+    .about-cont .about{
+        width: 70%;
+        position: relative;
+        margin:  10vh 0;
+        height: 100vh;
+        margin-bottom: 20vh;
+    }
+        .about-cont .about #img{
+            position: absolute;
+            right: 0;
+            top: 0;
+            object-fit: cover;
+            width: 40%;
+            height: 80%;
+            object-fit: cover;
+        }
+        .about-cont .about .about-text{
+            width: 60%;
+            word-wrap: break-word;
+            padding: 10%;
+            padding-bottom: 5%;
+            padding-left: 5%;
+        }
+            .about-cont .about .about-text p{
+                word-wrap: break-word;
+                margin-top: 2rem;
+                line-height: 1.7rem;
+                letter-spacing: 1px;
+                color: rgb(64, 62, 62);
+            }
+            .about-cont .about .about-text h3{
+                font-size: 2rem;
+            }
+            .about-cont .about .about-text button{
+                background-color: transparent;
+                border: 1px #B8860B solid;
+                color: #B8860B;
+                font-size: 1.2rem;
+                padding: 0.8rem 3rem;
+                font-weight: bold;
+                margin-top: 1rem;
+            }
+            .about-cont .about .about-text button:hover{
+                background-color: #B8860B;
+                color: white;
+            }
+        .about-cont .about .img-cont {
+            position: relative;
+            bottom: 0;
+            left:  0;
+            z-index: 30;
+        }
+            .about-cont .about .img-cont img{
+                width: 150px;
+                height: 150px;
+                margin-right: 1rem;
+            }
+
+.sec-x{
+    width: 100%;
+    background: url('img/x.webp') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+    .sec-x .dark{
+        z-index: 2;
+    }
+    .sec-x .text{
+        z-index: 50;
+        padding: 10%;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-bottom: 0;
+        padding-top: 5%;
+    }
+        .sec-x .text h2{
+            font-size: 3rem;
+            color: #FBF1E5;
+            font-weight: lighter;
+        }
+        .sec-x .text h3{
+            font-size: 2rem;
+            z-index: 50;
+            color: #FBF1E5;
+            font-weight: lighter;
+        }
+
+    
+
+    .sec-x .sec-imgs{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 15vh;
+        left: 0;
+        z-index: 10;
+        width: fit-content;
+        margin: auto;
+    }
+        .sec-x .sec-imgs .sec-img{
+            width: 250px;
+            height: 500px;
+            margin-right: 2rem;
+            position: relative;
+        }
+    
+            .sec-x .sec-imgs .sec-img img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            .sec-x .sec-imgs .sec-img span{
+                position: absolute;
+            }
+            .sec-x .sec-imgs .sec-img #title{
+                position: absolute;
+                top: 15%;
+                right: 10%;
+                z-index: 5;
+                color: #FBF1E5;
+                font-weight: lighter;
+                font-size: 1rem;
+                background-color: rgb(39, 39, 39);
+                padding: 0.2rem 0.5rem;
+            }
+            .sec-x .sec-imgs .sec-img #type{
+                bottom: 15%;
+                left: 10%;
+                z-index: 5;
+                color: #FBF1E5;
+                font-weight: lighter;
+                font-size: 1rem;
+            }
+
+.cust{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+    margin-top: 10vh;
+    margin: auto;
+}
+    .cust .cust-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+        .cust .cust-head h3{
+            font-size: 2rem;
+            letter-spacing: 3px;
+            padding-top: 2rem;
+        }
+        .cust .cust-head h4{
+            color: rgb(169, 163, 163);
+            font-weight: 600;
+            letter-spacing: 3px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: lighter;  
+        }
+    .cust .cust-main{
+        display: flex;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+        .cust .cust-main .step{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            margin-right: 10vh; 
+        }
+            .cust .cust-main .step p{
+                text-align: center;
+                font-size: 0.6rem;
+                color: rgb(152, 150, 150);
+                font-weight: bolder;
+                padding: 1rem 0;
+            }
+            .cust .cust-main .step h2{
+                font-size: 4rem;
+                padding-top: 3rem;
+            }
+            .cust .cust-main .step h3{
+                font-weight: 600;
+                padding-top: 2rem;
+            }
+            .cust .cust-main .step .square{
+                width: 25px;
+                height: 25px;
+                border: 5px  #B8860B;
+                border-style: inset;
+            }
+            .cust .cust-main .step .cust-icon{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-top: 2rem;
+            }
+                .cust .cust-main .step .cust-icon .icon-text{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 1rem;
+                }
+                .cust .cust-main .step .cust-icon img{
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 1rem;
+                }
+                .cust .cust-main .step .cust-icon .icon-text span{
+                    font-size: 0.6rem;
+                    font-weight: bolder;
+                }
+                .cust .cust-main .step .cust-icon .icon-text p{
+                    text-align: left;
+                }
+
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: url('img/1.webp') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+    .footer .dark{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .footer .foot-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-right: 5vh;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+        .footer .foot-sec p{
+            padding: 2rem 0;
+        }
+        .footer .foot-sec .icons i{
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+        .footer .foot-sec span{
+            margin-top: 0.5rem;
+            cursor: pointer;
+        }
+        .footer .foot-sec h3{
+            margin-bottom: 1rem;
+        }
+
+
+@media screen and (max-width: 768px) {
+    .nav-btn{
+        display: inline;
+    }
+    #nav-open,  #nav-close{
+        z-index: 30;
+    }
+    #res-logo{
+        display: inline;
+        padding: 1rem;
+        padding-left: 2rem;
+        
+    }
+    .home .navbar{
+        width: 100%;
+        height: 100vh;
+        background-color: #FBF1E5;
+        overflow: hidden !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9) !important;
+        
+    }
+         .navbar ul{
+            flex-direction: column;
+        }
+        .navbar li{
+            font-size: 1.5rem;
+            padding-top: 1rem;
+        }
+         .navbar #logo{
+            display: none;
+        }
+    .overflow{
+        overflow: hidden;
+    }
+    .hide{
+        display: none;
+    }
+    .home .main-text h1{
+        font-size: 4.5rem;
+    }
+    .home .main-text h3{
+        font-size: 1.2rem;
+        padding: 0 1rem;
+        margin-bottom: 0;
+    }
+    .home .main-text button{
+        font-size: 1rem;
+        padding: 0.9rem 0.8rem;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        margin-top: 2rem;
+        
+    }
+    .about-cont{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-cont .about{
+        width: 100%;
+        
+        height: fit-content;
+        
+    }
+    .about-cont .about #img{
+        display: none;
+    }
+    .about-cont .about .about-text{
+        width: 100%;
+    }
+    .about-cont .about .img-cont img{
+        width: 100px;
+        height: 100px;
+        margin-right: 1rem;
+       
+    }
+    .about-cont .about .img-cont {
+        width: 99%;
+        margin: auto;
+    
+    }
+    .about-cont .about button{
+        font-size: 1rem;
+        padding: 0.7rem 2rem;
+        margin-top: 1rem;
+    }
+    .sec-x .sec-imgs .sec-img{
+        width: 250px;
+        height: 500px;
+       
+    }
+    
+    .cust .cust-main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 5vh;
+        height: fit-content;
+    }
+    .sec-x .sec-imgs{
+        flex-direction: column;
+    }
+    .cust .cust-main .step{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-right: 0vh;
+        
+    }
+    .cust{
+        height: fit-content;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    .cust .cust-main .step .square{
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+    .footer{
+        height: fit-content;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 5rem;
+        
+    }
+        .footer .foot-sec{
+            margin-left: 5rem;
+            margin-top: 2rem;
+        }
+    
+  }

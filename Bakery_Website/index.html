@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <script>
+        function toggle_navbar(){
+            var open_btn = document.getElementById('nav-open')
+            var close_btn = document.getElementById('nav-close')
+            var navbar = document.getElementById('navbar')
+            open_btn.classList.toggle('hide')
+            close_btn.classList.toggle('hide')
+            navbar.classList.toggle('hide')
+            document.body.classList.toggle('overflow')
+        }
+    </script>
+    <body>
+        <div class="home">
+            <div class="dark"></div>
+            <h1 id="res-logo">
+                Honey
+            </h1>
+            <i class="fa-solid fa-bars-staggered nav-btn" id="nav-open" onclick="toggle_navbar()"></i>
+            <i class="fa-solid fa-xmark nav-btn hide" id="nav-close" onclick="toggle_navbar()"></i>
+            <div class="navbar hide" id="navbar">
+                <ul>
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        Services
+                    </li>
+                </ul>
+                <h1 id="logo">
+                    Honey
+                </h1>
+                <ul>
+                    <li>
+                        Shop Now
+                    </li>
+                    <li>
+                        How It Works
+                    </li>
+                    <li>
+                        Contact Us
+                    </li>
+                </ul>
+            </div>
+
+           <div class="main-text">
+                <div class="since">
+                    <img src="img/gold.png" />
+                    <h3>Since 1919</h3>
+                    <img src="img/gold.png" />
+                </div>
+                <h1>Love At First Bite</h1>
+                <div>
+                    <button id="shop">
+                        Shop Now
+                    </button>
+                    <button id="contact">
+                        Contact US
+                    </button>
+                </div>
+           </div>
+        </div>
+       <div class="about-cont">
+            <div class="about">
+                <div class="about-text">
+                    <h3>About Us</h3>
+                    <p>
+                        Welcome to <span id="logo" style="font-size: 1.9rem;">Honey</span> where the art of baking meets the joy of indulgence! Established with a passion for creating delightful and memorable culinary experiences, our bakery is a haven for those who appreciate the finest handcrafted treats.
+                        Our team combines traditional techniques with innovative flavors to offer a diverse menu that caters to every palate. 
+                    </p>
+                    <button>Learn More</button>
+                </div>
+                <img id="img" src="img/20 (6).jpg" data-aos="fade-left" />
+                <div class="img-cont">
+                    <img src="img/20 (3).jpg" 
+                    data-aos="fade-right"
+                    data-aos-duration="700"
+                    />
+                    <img src="img/20 (4).jpg" 
+                    data-aos="fade-right"
+                    data-aos-duration="700"
+                    data-aos-delay="200"
+                    />
+                    <img src="img/20 (2).jpg" 
+                    data-aos="fade-right"
+                    data-aos-duration="700"
+                    data-aos-delay="400"
+                    />
+                    <img src="img/s (4).jpg" 
+                    data-aos="fade-right"
+                    data-aos-duration="700"
+                    data-aos-delay="600"
+                    />
+                </div>
+            </div>
+       </div>
+       <div class="sec-x">
+            <div class="dark"></div>
+            <div class="text">
+                <h3>Check Our</h3>
+                <h2>Fresh Products</h2>
+            </div>
+            <div class="sec-imgs" 
+            data-aos="fade-down-left"
+            data-aos-duration="1000"
+            >
+                <div class="sec-img">
+                    <img src="img/s (1).jpg"/>
+                    <span id="title">Pastry</span>
+                    <span id="type">Cupcakes</span>
+                </div>
+                <div class="sec-img"
+                data-aos="fade-down-left"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                >
+                    <img src="img/s (10).jpg"/>
+                    <span id="title">Pastry</span>
+                    <span id="type">Donuts</span>
+                </div>
+                <div class="sec-img"
+                data-aos="fade-down-left"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                >
+                    <img src="img/s (12).jpg"/>
+                    <span id="title">Pastry</span>
+                    <span id="type">Tarts</span>
+                </div>
+                <div class="sec-img"
+                data-aos="fade-down-left"
+                data-aos-duration="1000"
+                data-aos-delay="700"
+                >
+                    <img src="img/s (3).jpg"/>
+                    <span id="title">Pastry</span>
+                    <span id="type">Cookies</span>
+                </div>
+                <div class="sec-img"
+                    data-aos="fade-down-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="900">
+                    <img src="img/s (5).jpg"/>
+                    <span id="title">Pastry</span>
+                    <span id="type">Cakes</span>
+                </div>
+            </div>
+       </div>
+       <div class="cust">
+            <div class="cust-head">
+                <h4>CUSTOMIZATION</h4>
+                <h3>Cakes For Parties</h3>
+            </div>
+            <div class="cust-main">
+                <div class="step">
+                    <div class="square"></div>
+                    <h2>01</h2>
+                    <h3>Choose your cake</h3>
+                    <p>Our diverse collection of meticulously crafted cakes ensures that your event will be a feast for the senses!</p>
+                    <div class="cust-icon">
+                        <img src="img/f (2).png" />
+                        <div class="icon-text">
+                            <h4>Cupcakes</h4>
+                            <p>
+                                Indulge in bite-sized bliss with our scrumptious cupcakes. Perfectly crafted and bursting with flavor, they're a delightful treat for any occasion.</p>
+                            <span>Details</span>
+                        </div>
+                        
+                    </div>
+                    <div class="cust-icon">
+                        <img src="img/f (1).png" />
+                        <div class="icon-text">
+                            <h4>Cakes</h4>
+                            <p>Celebrate life's sweet moments with our exquisite cakes. From classic to custom, each slice is a delicious work of art, making every occasion memorable.</p>
+                            <span>Details</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="square"></div>
+                    <h2>02</h2>
+                    <h3>Choose The Decorations</h3>
+                    <p>Select from our array of decorative elements, including vibrant fondant designs, elegant floral arrangements, or themed cake toppers that add a whimsical touch. </p>
+                    <div class="cust-icon">
+                        <img src="img/f (3).png" />
+                        <div class="icon-text">
+                            <h4>Donuts</h4>
+                            <p>Satisfy your sweet cravings with our delightful donuts, where every bite is a burst of flavor and joy.</p>
+                            <span>Details</span>
+                        </div>
+                        
+                    </div>
+                    <div class="cust-icon">
+                        <img src="img/f (4).png" />
+                        <div class="icon-text">
+                            <h4>Pancakes</h4>
+                            <p>Delight in breakfast bliss with our fluffy pancakes. Served with love and crafted to perfection, they're a sweet start to your day.</p>
+                            <span>Details</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="step" style="margin-right: 0;">
+                    <div class="square"></div>
+                    <h2>03</h2>
+                    <h3>Enjoy!</h3>
+                    <p>With your cakes selected and adorned with the perfect decorations, it's time to savor the moment! </p>
+                    <div class="cust-icon">
+                        <img src="img/f (5).png" />
+                        <div class="icon-text">
+                            <h4>Pies</h4>
+                            <p>
+                                Savor perfection in every bite with our artisanal pies, where flaky crusts and flavorful fillings redefine sweet indulgence.</p>
+                            <span>Details</span>
+                        </div>
+                        
+                    </div>
+                    <div class="cust-icon">
+                        <img src="img/ff (2).png" />
+                        <div class="icon-text">
+                            <h4>Croissants</h4>
+                            <p>Elevate your mornings with our buttery, flaky croissants, a perfect blend of indulgence and craftsmanship in every delightful bite.</p>
+                            <span>Details</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class="footer">
+            <div class="foot-sec">
+                <h1 id="logo">Honey</h1>
+                <p>Ready to elevate your taste experience? Contact us today, <br>and let us craft the perfect treat for your cravings and celebrations!</p>
+                <div class="icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="foot-sec">
+                <h3>About</h3>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    About us
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Services
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Testimonials
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Faq
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Payments
+                </span>
+            </div>
+            <div class="foot-sec">
+                <h3>Contacts</h3>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Contact us
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Book a table
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Cost Calc.
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Our chef
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    About Us
+                </span>
+            </div>
+            <div class="foot-sec">
+                <h3>Partners</h3>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Wedding
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Cake decorator
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Restaurant
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Coffee Shop
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Flowers
+                </span>
+            </div>
+            <div class="dark"></div>
+       </div>
+       <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+       <script>
+        AOS.init();
+       </script>
+    </body>
+</html>
